@@ -6,7 +6,7 @@ if (treasureLocation === bombLocation){
   bombLocation = Math.floor(Math.random() * 24);
 }
 
-var counter = 25
+var counter = 10
 
 const checkPosition = (id) => {
 

@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="treasurehunt.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    
     <title>Treasure Hunt</title>
 </head>
 <body>
-    <h1 id="top">Treasure Hunt</h1>
-    <img src="https://pngimg.com/uploads/treasure_chest/treasure_chest_PNG77.png" alt="Treasure chest" style="width:200px">
+    <header>
+        <h1 id="top">Treasure Hunt <span class="badge badge-secondary">💰</span></h1>
+        <img src="https://pngimg.com/uploads/treasure_chest/treasure_chest_PNG77.png" alt="Treasure chest" style="width:200px">
+    </header>
     <h2> Can ye find me secret treasure? </h2>
-    <ol>
-        <li>Click ye ol' square</li>
-        <li>Find me treasure within three tries</li>
-        <li>OR FIND YE DEATH</li>
-    </ol>
-    <table>
+    <div>
+        <ol class="list-group list-group-flush">
+            <li class="list-group-item">Click ye ol' square</li>
+            <li class="list-group-item">Find me treasure within 10 tries</li>
+            <li class="list-group-item">OR FIND YE DEATH</li>
+        </ol>
+    </div>
+    <div id="playspace">
+    <table class="gameboard">
         <tr>
           <td id="0" onclick="checkPosition(0)">?</td>
           <td id="1" onclick="checkPosition(1)">?</td>
@@ -50,16 +59,25 @@
           <td id="23" onclick="checkPosition(23)">?</td>
           <td id="24" onclick="checkPosition(24)">?</td>
         </tr>
-      </table>
+      </table>        
+      <button type="button" class="btn btn-danger" onClick="location.reload()">Restart ye game!</button>
+    </div>
+    <div class="turns">
       <h2 id="turns">Turns Remaining:</h2>
-<h2 id="counter">25</h2>
-<button type="button" onClick="location.reload()">Restart ye game!</button>
+        <h2 id="counter">10</h2>
+
+    </div>
     <footer>
         <nav>
             <p>Created by <a href="http://www.github.com/alyxender">Andee Isaacs</a></p>
             <a href="#top">To the top!</a>
         </nav>
     </footer>
-    <script type="text/javascript" src="treasurehunt.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script type="text/javascript" src="treasurehunt.js"></script>
+
 </body>
 </html>

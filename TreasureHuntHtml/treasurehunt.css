@@ -1,0 +1,38 @@
+* {
+    font-family: 'Nothing You Could Do', cursive;
+    margin:auto;
+}
+
+body {
+    background: url("https://images.pexels.com/photos/1121108/pexels-photo-1121108.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+
+h1, h2 {
+    text-align:center;
+    margin-top:100px;
+}
+
+button {
+    margin-left: 50%;
+}
+
+
+img{
+    margin-left:50%;
+}
+
+table {
+    margin:auto;
+    border-style: dotted;
+    width: 500px;
+    height: 500px;
+    background-image: url ("https://p1.piqsels.com/preview/566/327/593/map-background-antique-old-graphics.jpg");
+}
+td{
+    text-align: center;
+    background: transparent;
+    border-style: dotted;
+}
+td:hover{
+    box-shadow: 5px 2px black;
+}
